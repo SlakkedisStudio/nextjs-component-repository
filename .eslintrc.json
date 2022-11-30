@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "curly": ["error"],
+    "semi": ["error"],
+    "@next/next/no-img-element": ["error"], // enforces usage of <Image /> instead of <img />
+    "comma-dangle": ["error", "never"]
+  }
+}
