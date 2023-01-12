@@ -6,8 +6,8 @@ interface Props {
 
 const Button : React.FC<Props> = ({ children }) => {
   const s = useStyles(styles);
-  return <button className={s('')}>
-    I am a button :)
+  return <button className={s('button')}>
+    {children ? children : 'I am a button'}
   </button>;
 };
 

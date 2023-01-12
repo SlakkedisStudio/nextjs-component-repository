@@ -90,11 +90,11 @@ const Home: NextPageWithLayout = () => {
           <Divider />
         </Drawer>
 
-        <Box>
+        <Box className={s('component-preview-box')}>
           {(() => {
-            const Component = currentComponent.component;
             // const props = currentComponent.props;
-            return <Component>A component?</Component>;
+            return <currentComponent.component>
+            </currentComponent.component>;
           })()}
         </Box>
       </main>
